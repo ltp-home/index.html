@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ltp</title>
+		<link rel="shortcut icon" href="P1.ico">
+		<link rel="stylesheet" type="text/css" href="css.css">
+	</head>
+	<body>
+		<div class="beginimg"></div>
+		<style>
+			p#p1{
+                		position: relative;
+                		right:100px
+            		}
+		</style>
+		<ul>
+			<li><div align = "center"><a href="https://ltp-home.github.io/blog.html">洛谷</a></div></li>
+		</ul>
+		<br></br>
+		<br></br>
+		<h1 style = "font-size:50px;color:#fff" align=center>Welcome to LTP's home</h1>
+		<div　Class="main">
+			<div class="sh"><h1 align=left>Hello!</h1>
+			<h3 align=left>This is Top's home</h3></div>
+		</div>
+		<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+您的浏览器不支持 HTML5 canvas 标签。</canvas>
+		<script>
+		var c=document.getElementById("myCanvas");
+		var ctx=c.getContext("2d");
+		ctx.rect(200,200,200,200);
+		ctx.fillStyle="green";
+		ctx.fill();
+		var c=document.getElementById("myCanvas");
+		var ctx=c.getContext("2d");
+
+		// Create gradient
+		var grd=ctx.createLinearGradient(0,0,200,0);
+		grd.addColorStop(0,"red");
+		grd.addColorStop(1,"white");
+	
+		// Fill with gradient
+		ctx.fillStyle=grd;
+		ctx.fillRect(10,10,200,100);
+
+		</script>
+	</body>
+</html>
